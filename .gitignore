@@ -1,0 +1,12 @@
+node_modules/
+venv
+venv_*
+config.json
+.env
+__pycache__
+*.pyc
+
+db.sqlite3
+.vscode
+staticfiles
+.idea
