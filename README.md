@@ -13,7 +13,7 @@ A scalable web search engine featuring:
 
 
 ![System Architecture](./docs/architecture.svg)
-([View full diagram](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Search%20Engine%20Project&dark=auto#R%3Cmxfile%3E%3Cdiagram%20name%3D%22Page-1%22%20id%3D%22dTkWM2QsZdfghEIHy5cy%22%3E7V1dc9q6Fv01zPQ%2BNGP5C3gM0J72TM6c3KYzt%2FfpjMAC3AiL2nJC%2BuuPZEsYWwaMkYCZuA8N3kjG1lpbe2tJlnvOeLX5I4br5V8kQLhnW8Gm50x6tm1bvs%2F%2BcMtbbgHA6eeWRRwGwlYYnsLfSBgtYU3DACWlgpQQTMN12TgjUYRmtGSDcUxey8XmBJd%2FdQ0XSDE8zSBWrf8LA7rMrQPPKuxfULhYyl8GlvhmBWVhYUiWMCCvOybnU88Zx4TQ%2FNNqM0aYt55sl7ze5z3fbi8sRhFtUiH%2BvPz0sHQ%2BTn%2BkU%2FB7OH%2Fs29OPNWcRpoS%2ByTZIXsMVhhE7Gs1JRJ%2FEN4AdQxwuIvZ5xqqjmBleUExD1nz34gtK1sw6W4Y4eIBvJOU%2FklA4e5ZHoyWJw9%2FstBCLc7KvYyqY0AelEk%2B8JjNbzBqjhJV5lFcOKqa%2F4KZU8AEmVBhmBGO4TsJpdhvcsoLxIoxGhFKyEqa8FV4gTkUr9Gwf0%2ByL%2FC%2FasDuO2FXb%2FkLY5d%2Be7QB%2BjjEO%2BcXlZ2INgzY7TSxQ%2BgORFaLxGyuy3CWSLTzntWAdcAQ2W%2FfKD4VvucAVvBecX2xPXdCCfRDMOIEltsqSQ2zaoQ4OM9okNCbPWwfiUM1DjMcEE8aZSUSyQpJLGM1pDZNWYRDg7GRrOAujxXfOrMlHUFgesooTp7B8Ew3KTTGhkMICcwynCD%2BSJKQh4eeP87KjNQkjmrWgN%2Bp5k8wS0zGJ2E3AMLt%2FxLj0ijifxJ3JOwmjJYpDWtDnNNAH%2ByEXGPeBIYid1hCzG1QbQkB6Osp5f1EG1FUB5SbC6s5x1qUuGTdQVANyGcwRc5ixdedxWO0xOwbF8VGkazqEEbtwfL8OP%2FynFdxu%2FzjeQ0N4uzfe8Xu32%2FFPfsJoQQ50%2B3mB%2B8evrVjB%2BnGFFowI5Z7fL3f9jmeKJ17DfsHtuv6zun7X2g%2B6ANkz1ff7rTF%2Bz33%2FEkaMlOMYvuJv6FfKCrYMA85x6IemoO930J8HPQtMNE3MIQ9sU9APOuhbQ%2F%2BEYDxbGkTdWF8%2F7FBvjfojXKAJojDEJh1%2BYCzMd3G%2BPfbfl%2BxnKUbmgLeBKeCBpQJ%2FU4M9376zvZsd7yUofgln6JDOl2UCslgbtS9vAZUidmnY50s5QPYVfcsUZWqE4YPc6gZ%2BOgd%2BdgnmHXLoB7qxtqsC%2FZ6jQpJOVyHNHP9DGmONUaGMPbBMgt9Y9e3A3wV%2FgeifZCqGfj%2FJ9GtgDn%2FHJP63rgLf8PTf8awgHySelRbUSMFg4B7MCXzLWE7QVAsGnRisPSfYwm56IhA0HSXWoPyeY0KSS0K%2FUhS%2FaYsGVdSBuTFijRLchQJdoYArR7oDge0eHhy65gJBU%2BlYkqoLBBoHhxJ244GgqVRcg%2FJ7DgRscLArFPMVgjrHBxX4zUUE%2B9ZVQ7d%2F5%2B%2F%2B699sgHgl8TNrgQMCIsIsbcjUBF6uBVXsYbk11KVFtueX4gXou%2BVFJK4%2FMEWlpmqi3amJ%2BgOGxF3CrLiNIdCbKos1oL%2Fn%2BDHjvQCPIFxX5Ke0rQCt6VJfCKkQYnApQjRVGztClAgxR5QNLLWKzBUGAHApCtQIjh0FjlOA3XoMZ%2FQhjJ6TD0u6MkiFangwtbDUbqomdlQoUYG1V4Luo2CMEYwMc6F%2FKS401Rw7LpQ1R0pi9A2%2BmqWBbV2KBk1Xo3Y0UGnwyPuF4EPWPWiUG6pccC7FhaYaY8eFEhfCKECbCZmlK9Zsxtng14oO%2BslQI0XelBTlD66lPcUkZYgH4sw1jCgrUd9QECYHhKjs%2BxH3m3YyFHBqnmH0xMBPnsatPL0EBvadXIqi%2F8HGGhnzIMm6jiTrSChMnv%2BborTdhFXdXKakgVyoYEptdBqrjSrindp47jqFCspDYyjXyIu3FROs24gJsgkeMmpnpgWGSdJrOHkRcBbC5OD0Nknogl3rpB2NgF%2FDI7e8zAnYoLxc3rGMMaupTikp2EUMoUwsUKItWrjllS%2BSIvrRbipJdmir0xR%2FkqkxxIfGEG%2BqPNYg3uUH5%2BYHFZSBbQzmGlGxSxCaJQhHk4IpJtN%2FuO7Et886sATaGaWzZ9RyC6SatGC7Z8q%2BtMADxvjUVJ2UxOsCRRYoWJz4Qlf47%2BlPNKPaosWWCMbzg6ZCZAe7Ok8VsBqUNZth8M2lCk3XQNaA36UKZ690rW6FYQpmt0YjvK1U4Wr68nbXyhZic%2F5IxD%2FZlMSBJOHvNYryZ6XGOE1oW%2BXZr1GeBxXluZot9I1lC25TEdLt5q8UEeFrzhhN48rBhXRnv%2FFeaR3kCuR5B2AKc2MqtFyN3wbzLkE4%2B5nIMsrANgaz%2BCEUKLtFqxkDSeMZOnAyNbOYpfFLMRzncf%2Beb11dwI%2BiQFrIOvNRtAnpD1GDf%2F4%2FR%2B7Oy8qyO%2F4hgMwOiu%2BKAG4p%2BARoDlNc4MMuY4EOUlpx5i%2Ffvz8yS5xvh5fUgxojDGn4Um7HOsSyquy24dtOAcHAKqDb85%2BBsasRY%2FXZ2DMwtu6GQ7%2BEMwD2SUjzmpPN7sHbzsEj80vWejxxzW2sBWR2y9x7SRYkgvhTYW3KEJld7VAkk417PJMfZe3Dt1A4kyfnebanEXVfHQVeybUPAK4NXNX%2Fk20Qvxqc%2Fq068VloasOsr2CWvQCBP2KSPa54Vez6OoOsOnejFbzG7rYHZHvLgKJedqTdT%2BUs1q6fwheO%2BU8y1RGiV5tHHpRLw%2Bzq9tSVYXZ%2B0aKagVA%2B0MkkNXPXxiTHPjdUt6VXQ%2FLIJVI75EHRr3xZmCVjOV8qdhkiDat6jWkiDXUSyWA8YRd6hAwVll2i53HV9O8Zvb2SOOCtcPVcQXZKesBVN0G4VrJwkaDiKNBiAoOeeKGSbTGIIF85dlWAgU6A1cWiFwHYuUZuL6ezVHhZl8%2BwyCf3etlrt6h4xdHVUD5FmzkPPAkRuI3%2BtSY4mwnD1Z0ivOpMXO49ShhWz%2BRb1p1lld9xY4MhFzis7b%2FKa6wMx3hPp%2B4jn3G%2FHNGkRlTqUAau2y6VNB431I4le3pN9ixCF5L9iwkye%2F0ymZUNE%2FeQWRvfdCpO8inq8%2Fi2h1J33BW10Crj8p0F%2FEpsK2TMfcTjR8b0yZoEVUxWWyRm%2F6VrlsIgHTTcL2PvY6lXYanY52tvz1qt0PftCnvza9jXMTvl6oPqmprGXfx23zl5IRce%2FHs6JUBbj4ykKXHY65gWAKc7pkGBSTqO5tFAO1fyK%2B%2FJ9ARD9icplQqO0JNaulLfqUxLGg4wvk4dVdUsynwtmPNAsklnTsSfiNI3sXQJppQwE9%2BhoFeMe9QxUK5YNdBRGfn7lTDiDMyEkZKr17l18Dnk2JyiqDlacvRTncCvRAdXDGf3%2BUC1vHNaNAFVD6q%2BqMJwDJBrfMRbocXKht72jblHl2v4qpzD6fLA10WU2Xx06d92bUa2AG%2FvsppJr2Z1TP7uGWZ7ergXXx5fNVHLJFGFec9gaJewaZ5ByyJkPk%2FQibixw%2BJV13nx4o3hzqd%2FAQ%3D%3D%3C%2Fdiagram%3E%3C%2Fmxfile%3E))
+([View full diagram](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=search-system.drawio&dark=auto#R%3Cmxfile%3E%3Cdiagram%20name%3D%22Page-1%22%20id%3D%22dTkWM2QsZdfghEIHy5cy%22%3E7V1bc5u6Fv41nul5aAaJm%2F2Y2L1OOju76czuedojg2zTYOSCSOL%2B%2BiOBZBuQHYIl23NCHpKwjDDo%2B5bW0qcLA3u8fP6UotXiGwlxPIBW%2BDywJwMIoeV57A%2B3rEsLALZfWuZpFArb1nAf%2FcHCaAlrHoU4q5xICYlptKoaA5IkOKAVG0pT8lQ9bUbi6reu0Bw3DPcBipvWf6KQLkrr0LW29s84mi%2FkNwNLfLJE8mRhyBYoJE87JvvDwB6nhNDyv%2BXzGMe89mS9lOU%2B7vl0c2MpTmibAunHxYfbhf1%2B%2BjOfgj%2Bj2Z0Pp%2B8VVxGmjK5lHWRP0TJGCTu6mZGE3otPADtGcTRP2P8BK45TZnjEKY1Y9V2LDyhZMWuwiOLwFq1Jzr8koyh4kEc3C5JGf9hlUSyuyT5OqWCCDypn3POSzGwxa4ozds6dvHNQM31Dz5UTb1FGhSEgcYxWWTQtHoNbliidR8kNoZQshamshUcU56IWBtCLafFB%2BRc%2FsydO2F1Dby7s8u8A2oBfYxxH%2FObKK7GKwc87VSxQ%2BoTJEtN0zU5Z7BIJCs952rIO2AKbjXuVh8K3HOAI3gvOzzeX3tKC%2FSOY8QqWwCZLDrFphzpxVNAmoyl52DgQh2oWxfGYxIRxZpKQ4iTJpRjPqIJJyygM4%2BJiKxREyfwHZ9bkPdhabouCE3tr%2BS4qlJtSQhFFW8xjNMXxHckiGhF%2B%2FbQ892ZFooQWNejeDNxJYUnpmCTsIVBUPD9mXHrCnE%2FiyeSTRMkCpxHd0ud1oA%2F3Qy4w9oEhiO3OELMHbFaEgPT1KJftRRVQpwkoNxFWdhYXTeqCcQMnCpCrYN4whxlbVy6HFY7ZMdgev4i0okG4YTceX6%2Bid%2F%2FpBLfjv4z3yBDezoU3%2FO7ZGv5dzrKGHIPQxX6D4OyTkefbyGsTKia%2FUDInBwJFecL13ZdOPGItf4NIjDrVWOFVg4XtmmKW27IlcfpgcVSwcKz9oAuQXVPRwuuM8VuOFguUMFKOU%2FQUf8e%2Fc3Zix8Bhvwz9yBT0fg%2F9cdCzUEbzzBzyAJqCfthD3xn6e4zSYGEQdWNt%2FahHvTPqd2iOJ5iiKDbp8ENjYb6P892x%2F7FgX0tjbA54CEwBD6wm8BfVPfTgFXQvpIcIpghgKCphxz4rflQ9R8vyPlx%2FbNNzzHD6GAX4kMZY5BTytC5KY1mXTbLBSgfSk1KEbHV8yxT5FKL0QZb2XUidXUhYgXmHHPqBbq0rN4F%2By%2FEly6fLiBaO%2Fy5PY43xpYo9sEyC31px7sHfBX%2BO6VcyFZ3IX2T6JTSHv20S%2F0tXoM839HhR%2BUXZcT0qwVDI02DoHMwuPMtYdtFWnwa9QK09u9jAbno4E7TtuSpQfsvRJStlqt85Ttfa4koddWCu36pQp%2FugcnlBhetiukMKdA53WB1zIaWtMC7p2YcUjR1WCbvxkNJWCFeg%2FJZDCuuw7MrgfMakzj5LDX5zsQVeuibq%2BFfe7o9%2FIaEmRHg4C1QhxQuGeDprE1KeSPrA6uyADIpjXPClkEX4qR34BUfVKmzOz4KuVwkywLer82pcCK5kOf0UbKuMwl4Z1R9oJPQyn2i4myHQ26qkCtDfctwJeEPAIw%2FXSPkloRXiFV3oCz01QgxPRYi2ymlPiAohZpiyrq1WwbzGAABORQGFeNpT4GUKsEdPUUBvo%2BQhe7egS4NUqIcHU9NtYVs9s6dChQqsvjJ8nYTjGKPEMBf8U3GhrerZc6GqelKS4u%2FoySwNoHUqGrSdo9vToEmDO94uhO%2BK5kGjTFHngn0qLrTVJnsuVLgQJSF%2BnpAgX7JqM84GT6k76CeDQsK8KAnLG55Ls0pJzhAPB01NpBwUgYFSwQq9qee2WgP2HYdRdkDAKj6%2F4Zfvpl0BW7F61BVdRXkZp7YKDAzhlZyIo39JqUIwPUjLvukpmh6Ksoe%2Fc5x3GxpTjb9KGsjJFUNTiLfWJ5uI9%2FrksXMraiiPjKGsECQvK4pYlxFFZBXcFtQuTPMYZdlAOUyiI8iEnLcoOzj0TjI6Z0836UY84CmY51QncwEIqgsVbMsYF9tqoZK0fYwR6sccZ9rii1Od3yMpoh%2FttrJnj3ZzKOQrmRpDfGQM8bbqpgLxPqM4NqOooQygMZgVwmWfUrRLKQykEdOYTP%2FlahjfHO3A1HD7Jg8ecMcNrhSJxGZHnH2JhAuMMbCtZiqp2oeWIrSwyPKZLuO%2Fpr9wQLXFlw0RjGcUbeXRHvbm6FnISlBWbYbBN5dctJ3RqQC%2FTy6Onrdb37bEFMyOQoe8rOTibKr3Zk%2FSk0jg5eKSf4uhlQNpxV8rnJSrzsZxntGuerin0MOHNT28nl%2F4xvILp6006vTjcA2h4kvJGE191%2BGJ1HCv9U54PeQNyMsGwBTmxrRxuRqhC%2BZ9SnH06tIqygAag1l8EQ4bu4c3cwySpwE%2BcLFmLhLk6eO2y88zhWu%2BlfkWfpyE0kJWhY%2Fi54j%2BFCX4%2F%2F%2FlyF25xbnsiX8KIIuD7WfbkG818AnxDOXxFh92G3N8kNINZ%2F7848cds6TlZoeZGtQUx4hGj9V6VCFWFGWPjdY7JwgG1gHdXP8IjB2NGDdXGR%2BBsXU1GnkVnAGAr0Kal5w87x6sdw7umF%2By2uOpbmljNSDzYebeCzInCYo%2FbK1tGSKzqx2KFNL0gOf%2BN0X98G0tjuTJcZ7takTda%2FYbz%2BTaBwDXBm7T%2F7NNED8bnN6lOvFRaGrDzG9gVrwQgy%2BVKZZrnhU7X2eQbY4PaQWvtbvtARluGLAtVxxp91M5Urbrp%2BiRY%2F6LTHWE6OXzHQ%2FKlW52ffPxWje7vGlRzEAoH%2BpkUjNz18YkGx4bqrvSqyV55MStHfLg5Hc5Wc2SsZxPYDsNkUZ1vcY0kUY6iWQwnrAbfYEMNZadouVxmunfA14%2FkTTktXD2XEE2SnrAbW4Cca5k4SRBxW5AGxMUDsQLtqDFIEJ8dtpZAQY6AW5OYT0JwPY5cns5ANaElzX5DItyOHBQvIaNildenQ1lndoM1NNGSyyB4YZ4v0LA93Z8bTLRPSfQEf33Kz3q5ABaTjU58Hxvl0wvF5CjQVv2lfewp%2FjmVX8yq7VryUjJrkYy0kxrPMu6sixQu5kRB9Ha%2FNRe7mY403F1ql9yx4LTeZH0g4oPDB2nW0JtPHo2m9diLaJsX4U6JltZE5m169ecp75b2h4ya%2BObTt0NatHd2lBqNBx176OBKwt4tei%2BFXL3kY4fGVNoFSm6GK63SMp%2B5SuWxOFzNO%2FAr78aT7zBbG%2Br2ijgWYcLuK51bAH4igACvNreUcP6TKfWAcSphSL%2FxAKLq1NmVaxEPmPOtcmottGjvBAP2GcbSVGIeNI1Nfe4ujnryKmucJaK335nddQSYfsCQuTr6Hu%2BXRsrNhzvPJ3idrOTUiX4lmq3pJgJwJn7C1O6FjPQUE4JM%2FHtLwbbzmizY1rKiC3EbeYdfi2y2UMzka3SNqjagfBjxLF5TZfGPksPxquFEwccjnD18%2B3XhR9Qe3%2B0XX%2Bji%2BGgISdeiVe3i%2BkmA6jaaPOgD%2B3wntPllk9WqbL5xRmcmwkzxTzKvXOdJgPFlKXydU%2FMdn97LT58eSqLkkmiCPOe4QhWsGmf0MtTyGyW4WNx%2BzS%2F%2B%2Frz%2FeNi%2FefvBf3yz0%2F843e6GQB5bdOlvpgSwsMef3TjpsO5m%2F5k1zZXcOT8cv3%2BpK5K0N6fDgJ7Zn8qduTKV8z4ijXKL%2FgTrOUj8pX2l%2BFQ%2B93nIuan%2Fz9vLJwFCxzm8eG9hVOSFCLMR%2FZ7s9HwFKOOK9%2F27BJZWXlpVRjc2GbYHmqYqK4kI2zbWDQY2s9fPXq9bS2A6N9NVAmlYg%2BFlpC%2F5WnqQRmm%2FopDvrL%2BXYjWmb43ptSYcPzWwuwwJYTuBq4UrRbfSMhj%2B4f%2FAQ%3D%3D%3C%2Fdiagram%3E%3C%2Fmxfile%3E))
 
 
 
@@ -40,16 +40,134 @@ A scalable web search engine featuring:
 │  ├─ search_service.py        # OpenSearch query pipeline
 │  └─ page_service.py          # Page metadata (Postgres) + content (S3)
 
-├─ crawler/                    # Distributed crawler (Celery workers)
-│  ├─ tasks.py                 # crawlPage(url, depth, root_job_id)
-│  ├─ link_filter.py           # Depth limiting, dedupe, domain filtering
-│  └─ models.py                # CrawlJob (Crawl job tree + SLA fields), Page (Metadata for each crawled page) models
+├─ tasks/                      # Tasks (Celery)
+│  ├─ crawl.py               # crawlPage(job_id, url, max_depth, max_pages)
+
+├─ models/                    # Models
+│  └─ crawl_job.py            # CrawlJob (Crawl job tree + SLA fields)
+│  └─ page.py                 # Page (Metadata for each crawled page) models
 
 ├─ integrations/               # External system adapters
 │  ├─ opensearch_client.py     # OpenSearch adapter
 │  ├─ s3_client.py             # S3 adapter
+│  ├─ http_client.py           # fetch HTML (headless browser/service)
 
 ```
+
+
+## 🔧 Key Components
+
+Below is an overview of all major components in the system and how they interact.
+
+---
+
+### **1. API Layer (`api/`)**
+The HTTP interface exposed to external clients.
+
+**Responsibilities:**
+- Handle incoming REST requests
+- Handle Auth if needed
+- Validate input, apply throttling, return responses
+- Delegate business logic to services
+
+**Endpoints:**
+- `POST /crawl` – Submit crawl or re-crawl job
+- `GET /crawl/{job_id}` – Retrieve job status
+- `GET /search` – Search indexed pages
+- `GET /pages/{page_id}` – Retrieve full page metadata + stored content
+
+**Key Files:**
+- `views.py` – Request handlers
+- `throttling.py` – SLA-aware admission control
+
+---
+
+### **2. Services Layer (`services/`)**
+Contains business logic independent from HTTP and workers.
+
+#### **CrawlService**
+- Creates crawl jobs (root + recursion)
+- Enforces 1-hour SLA logic
+- Pushes crawl tasks to Redis/Celery
+- Aggregates job status from Postgres
+
+#### **SearchService**
+- Handles keyword searches
+- Sends queries to OpenSearch
+- Returns titles, snippets, scores, URLs, page IDs
+
+#### **PageService**
+- Loads page metadata (from Postgres)
+- Fetches raw/parsed content from Blob storage (S3)
+
+---
+
+### **3. Crawler System (`crawler/`)**
+Distributed crawling engine run by Celery workers.
+
+**Responsibilities:**
+- Fetch HTML
+- Extract links from HTML content
+- Parse + clean content
+- Store raw + parsed objects in Blob Storage (S3)
+- Save metadata to Postgres (pages)
+- Index cleaned text in OpenSearch
+- Schedule recursive crawl jobs
+
+**Key Files:**
+- `tasks.py` – Main crawl pipeline (`crawlPage`)
+- `link_filter.py` – Depth limiting, URL dedupe, filtering
+- `models/pages.py` – Page metadata
+- `models/crawl_jobs.py` – CrawlJob with SLA tracking
+
+---
+
+### **4. Integrations (`integrations/`)**
+Unified adapters for external systems.
+
+#### **OpenSearch Client**
+- Index new documents
+- Update existing pages
+- Execute search queries
+
+#### **S3 Client**
+- Upload raw HTML & parsed content
+- Retrieve page content for PageService
+
+#### **Redis Client**
+- Provides Celery broker queue
+- Optional distributed locks for deduplication
+
+---
+
+### **5. Storage Layer**
+Not folders, but critical components:
+
+#### **Postgres**
+- Stores `pages` table
+- Stores `crawl_jobs` (root + recursive jobs)
+- Tracks crawl status, SLA deadlines, metadata
+
+#### **S3**
+- Raw HTML (compressed)
+- Parsed JSON (cleaned content)
+
+#### **OpenSearch**
+- Full-text search index
+- Stores searchable content, title, snippet, metadata
+
+---
+
+This modular layout ensures clear separation of concerns between:
+- **HTTP handlers**
+- **Business logic**
+- **Crawler pipeline**
+- **External system adapters**
+- **Data storage**
+
+
+
+
 ---
 ## 🚀 Run locally
 
@@ -66,5 +184,8 @@ pip install -r requirements.txt
 # 3. Run database migrations (uses default SQLite in `app/settings.py`)
 python manage.py migrate
 
-# 4. Start the Django development server
+# 4. Install Playwrite (headless browser for scraping html)
+playwright install
+
+# 5. Start the Django development server
 python manage.py runserver
