@@ -5,7 +5,7 @@ A scalable web search engine featuring:
 
 - Distributed crawling (with **1-hour SLA**)
 - Link extraction & recursive crawling
-- Raw + parsed content Blob storage in S3
+- Raw content Blob storage in S3
 - OpenSearch indexing (AWS ElasticSearch)
 - Keyword search API
 - Page Details API
@@ -41,15 +41,15 @@ A scalable web search engine featuring:
 │  └─ page_service.py          # Page metadata (Postgres) + content (S3)
 
 ├─ tasks/                      # Tasks (Celery)
-│  ├─ crawl.py               # crawlPage(job_id, url, max_depth, max_pages)
+│  ├─ crawl.py                 # crawlPage(job_id, url, max_depth, max_pages)
 
-├─ models/                    # Models
-│  └─ crawl_job.py            # CrawlJob (Crawl job tree + SLA fields)
-│  └─ page.py                 # Page (Metadata for each crawled page) models
+├─ models/                     # Models
+│  └─ crawl_job.py             # CrawlJob (Crawl job tree + SLA fields)
+│  └─ page.py                  # Page (Metadata for each crawled page) models
 
 ├─ integrations/               # External system adapters
-│  ├─ opensearch_client.py     # OpenSearch adapter
-│  ├─ s3_client.py             # S3 adapter
+│  ├─ index_client.py          # OpenSearch adapter
+│  ├─ blob_storage_client.py   # S3 adapter
 │  ├─ http_client.py           # fetch HTML (headless browser/service)
 
 ```
@@ -78,7 +78,6 @@ The HTTP interface exposed to external clients.
 
 **Key Files:**
 - `views.py` – Request handlers
-- `throttling.py` – SLA-aware admission control
 
 ---
 
@@ -86,10 +85,10 @@ The HTTP interface exposed to external clients.
 Contains business logic independent from HTTP and workers.
 
 #### **CrawlService**
-- Creates crawl jobs (root + recursion)
-- Enforces 1-hour SLA logic
+- Creates crawl jobs
+- Enforces 1-hour SLA logic (before creating job)
 - Pushes crawl tasks to Redis/Celery
-- Aggregates job status from Postgres
+- Get job status from SQL DB
 
 #### **SearchService**
 - Handles keyword searches
@@ -97,7 +96,7 @@ Contains business logic independent from HTTP and workers.
 - Returns titles, snippets, scores, URLs, page IDs
 
 #### **PageService**
-- Loads page metadata (from Postgres)
+- Loads page metadata (from SQL DB)
 - Fetches raw/parsed content from Blob storage (S3)
 
 ---
@@ -108,35 +107,34 @@ Distributed crawling engine run by Celery workers.
 **Responsibilities:**
 - Fetch HTML
 - Extract links from HTML content
+- Maintain single Browser session (Chrome headless)
 - Parse + clean content
-- Store raw + parsed objects in Blob Storage (S3)
-- Save metadata to Postgres (pages)
+- Store raw in Blob Storage (S3)
+- Save pages metadata to SQL DB
 - Index cleaned text in OpenSearch
-- Schedule recursive crawl jobs
+- Handle SLA requirement during crawling
 
 **Key Files:**
-- `tasks.py` – Main crawl pipeline (`crawlPage`)
-- `link_filter.py` – Depth limiting, URL dedupe, filtering
+- `crawl.py` – Main crawl pipeline (`run_crawl_job`)
 - `models/pages.py` – Page metadata
-- `models/crawl_jobs.py` – CrawlJob with SLA tracking
+- `models/crawl_jobs.py` – CrawlJob
 
 ---
 
 ### **4. Integrations (`integrations/`)**
 Unified adapters for external systems.
 
-#### **OpenSearch Client**
+#### **Index Client (OpenSearch) **
 - Index new documents
 - Update existing pages
 - Execute search queries
 
-#### **S3 Client**
+#### **Blob Storage Client**
 - Upload raw HTML & parsed content
 - Retrieve page content for PageService
 
-#### **Redis Client**
-- Provides Celery broker queue
-- Optional distributed locks for deduplication
+#### **HTTP Client**
+- Scraping urls with Headless Browser (Playwrite)
 
 ---
 
@@ -150,7 +148,6 @@ Not folders, but critical components:
 
 #### **S3**
 - Raw HTML (compressed)
-- Parsed JSON (cleaned content)
 
 #### **OpenSearch**
 - Full-text search index

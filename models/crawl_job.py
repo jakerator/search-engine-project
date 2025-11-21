@@ -56,7 +56,7 @@ class CrawlJob(models.Model):
         self.finished_at = timezone.now()
         self.save(update_fields=["status", "finished_at"])
 
-    def mark_failed(self, error_message):
+    def mark_failed(self):
         self.status = "failed"
         self.finished_at = timezone.now()
         self.save(update_fields=["status", "finished_at"])

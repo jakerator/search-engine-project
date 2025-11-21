@@ -12,6 +12,7 @@ import uuid
 from datetime import timedelta
 from django.utils import timezone
 from models.crawl_job import CrawlJob
+from tasks.crawl import run_crawl_job
 
 
 class SLAExceededError(Exception):
@@ -136,14 +137,12 @@ class CrawlService:
         """
         # Import here to avoid circular dependency
         try:
-            from crawler.tasks import crawl_page
+
 
             # Queue task to Celery
-            crawl_page.delay(
+            run_crawl_job.delay(
                 job_id=str(job_id),
                 url=url,
-                max_depth=max_depth,
-                max_pages=max_pages,
                 sla_duration_hours=cls.SLA_DURATION_HOURS,
             )
         except ImportError:

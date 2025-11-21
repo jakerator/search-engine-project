@@ -1,5 +1,6 @@
 from django.contrib import admin
 from .crawl_job import CrawlJob
+from .page import Page
 
 
 @admin.register(CrawlJob)
@@ -19,5 +20,23 @@ class CrawlJobAdmin(admin.ModelAdmin):
         }),
         ('Timestamps', {
             'fields': ('requested_at', 'started_at', 'finished_at')
+        }),
+    )
+
+
+@admin.register(Page)
+class PageAdmin(admin.ModelAdmin):
+    list_display = ['id', 'job', 'url', 'http_status', 'last_crawled_at']
+    list_filter = ['http_status', 'last_crawled_at']
+    search_fields = ['url', 'job__id']
+    readonly_fields = ['id', 'job', 'url', 'http_status', 'last_crawled_at', 'error']
+    ordering = ['-last_crawled_at']
+
+    fieldsets = (
+        ('Page Information', {
+            'fields': ('id', 'job', 'url')
+        }),
+        ('Crawl Details', {
+            'fields': ('http_status', 'last_crawled_at', 'error')
         }),
     )
