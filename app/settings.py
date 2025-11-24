@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'api',
     'models.apps.ModelsConfig',
+    'tasks'
 ]
 
 MIDDLEWARE = [
@@ -165,3 +166,17 @@ CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = 'UTC'
 CELERY_IGNORE_RESULT = True
 CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True
+
+
+
+# AWS S3 Configuration for Blob Storage
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID', '')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY', '')
+AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME', 'search-engine-crawl-data')
+AWS_REGION = os.environ.get('AWS_REGION', 'us-east-1')
+
+
+# AWS OpenSearch Configuration
+OPENSEARCH_HOST = os.environ.get('OPENSEARCH_HOST', 'crawled-pages.us-east-1.es.amazonaws.com')
+OPENSEARCH_PORT = int(os.environ.get('OPENSEARCH_PORT', 443))
+OPENSEARCH_INDEX_NAME = os.environ.get('OPENSEARCH_INDEX_NAME', 'crawled-pages')

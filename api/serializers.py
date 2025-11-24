@@ -31,3 +31,39 @@ class CrawlStatusSerializer(serializers.Serializer):
     pages_crawled = serializers.IntegerField(read_only=True)
     created_at = serializers.DateTimeField(read_only=True)
 
+
+class SearchRequestSerializer(serializers.Serializer):
+    """Serializer for search request."""
+    q = serializers.CharField(required=True, help_text="Search query")
+    size = serializers.IntegerField(
+        required=False,
+        default=10,
+        min_value=1,
+        max_value=100,
+        help_text="Number of results (default: 10, max: 100)"
+    )
+    from_ = serializers.IntegerField(
+        required=False,
+        default=0,
+        min_value=0,
+        source='from',
+        help_text="Offset for pagination (default: 0)"
+    )
+
+
+class SearchHitSerializer(serializers.Serializer):
+    """Serializer for individual search result."""
+    url = serializers.URLField(read_only=True)
+    title = serializers.CharField(read_only=True)
+    score = serializers.FloatField(read_only=True)
+
+
+class SearchResponseSerializer(serializers.Serializer):
+    """Serializer for search response."""
+    total = serializers.IntegerField(read_only=True)
+    hits = SearchHitSerializer(many=True, read_only=True)
+
+
+class PageDetailsRequestSerializer(serializers.Serializer):
+    """Serializer for page details request."""
+    page_id = serializers.IntegerField(required=True, help_text="Crawled page identifier")

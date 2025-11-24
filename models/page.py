@@ -9,6 +9,7 @@ class Page(models.Model):
     last_crawled_at = models.DateTimeField(null=True, blank=True)
     http_status = models.IntegerField(null=True, blank=True)
     storage_key_raw = models.CharField(max_length=512, null=True, blank=True)
+    search_index_key = models.CharField(max_length=512, null=True, blank=True)
 
     error = models.TextField(null=True, blank=True)
 

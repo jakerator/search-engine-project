@@ -33,15 +33,17 @@ A scalable web search engine featuring:
 
 ├─ api/                        # HTTP layer (controllers)
 │  ├─ views.py                 # /crawl, /crawl/{job_id}, /search, /pages/{id}
-│  └─ throttling.py            # SLA-aware throttling (overload protection)
 
 ├─ services/                   # Business logic
 │  ├─ crawl_service.py         # submitCrawl(), getJobStatus()
 │  ├─ search_service.py        # OpenSearch query pipeline
 │  └─ page_service.py          # Page metadata (Postgres) + content (S3)
 
-├─ tasks/                      # Tasks (Celery)
-│  ├─ crawl.py                 # crawlPage(job_id, url, max_depth, max_pages)
+├─ tasks/                      # Tasks (Celery, Crons)
+│  ├─ management
+│  │  └─ commands
+│  │     └─ cleanup_jobs.py    # Cleanup old jobs command (Cron/Celery Beat)
+│  └─ crawl.py                 # run_crawl_job (Celery task)
 
 ├─ models/                     # Models
 │  └─ crawl_job.py             # CrawlJob (Crawl job tree + SLA fields)

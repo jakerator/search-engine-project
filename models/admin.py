@@ -26,10 +26,10 @@ class CrawlJobAdmin(admin.ModelAdmin):
 
 @admin.register(Page)
 class PageAdmin(admin.ModelAdmin):
-    list_display = ['id', 'job', 'url', 'http_status', 'last_crawled_at']
+    list_display = ['id', 'job', 'url', 'storage_key_raw', 'http_status', 'last_crawled_at']
     list_filter = ['http_status', 'last_crawled_at']
     search_fields = ['url', 'job__id']
-    readonly_fields = ['id', 'job', 'url', 'http_status', 'last_crawled_at', 'error']
+    readonly_fields = ['id', 'job', 'url']
     ordering = ['-last_crawled_at']
 
     fieldsets = (
