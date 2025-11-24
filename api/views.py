@@ -12,7 +12,6 @@ from api.serializers import (
     SearchResponseSerializer,
     PageDetailsRequestSerializer,
 )
-from datetime import datetime
 from services.crawl_service import CrawlService, SLAExceededError
 from services.page_service import PageService
 from services.search_service import SearchService
@@ -21,7 +20,7 @@ from services.search_service import SearchService
 @api_view(['GET'])
 @permission_classes([AllowAny])
 def api_root(request, format=None):
-    """Browsable API root listing core endpoints."""
+    """DRF Browsable API root listing core endpoints."""
 
     return Response({
         "crawl": reverse('crawl', request=request, format=format),
@@ -74,6 +73,11 @@ class CrawlSubmitView(GenericAPIView):
             return Response(
                 {"error": str(e)},
                 status=status.HTTP_503_SERVICE_UNAVAILABLE
+            )
+        except Exception as e:
+            return Response(
+                {"error": f"Failed to submit crawl job: {str(e)}"},
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR
             )
 
 

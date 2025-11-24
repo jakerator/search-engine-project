@@ -1,5 +1,8 @@
-from rest_framework import serializers
+"""
+API serializers for crawl job submission, status, search, and page details.
+"""
 
+from rest_framework import serializers
 
 class CrawlSubmitSerializer(serializers.Serializer):
     """Serializer for crawl job submission."""

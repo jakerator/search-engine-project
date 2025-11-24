@@ -37,7 +37,7 @@ class HeadlessBrowser:
             self._playwright = playwright_ctx.__enter__()
             self._browser = self._playwright.chromium.launch(headless=self.headless)
 
-    def _fetch_in_thread(self, url: str) -> tuple[str, str, str, str, int]:
+    def _fetch_in_thread(self, url: str) -> tuple[str, str, str, list[str], int]:
         """Fetch HTML in dedicated thread."""
         self._init_browser()
 
@@ -62,7 +62,7 @@ class HeadlessBrowser:
         finally:
             page.close()
 
-    def fetch_html(self, url: str) -> tuple[str, str, str, str, int]:
+    def fetch_html(self, url: str) -> tuple[str, str, str, list[str], int]:
         """Synchronously fetch HTML and derived metadata for the given URL."""
         return self._executor.submit(self._fetch_in_thread, url).result()
 

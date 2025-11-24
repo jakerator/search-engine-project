@@ -5,10 +5,9 @@ from django.utils import timezone
 
 class CrawlJob(models.Model):
     """
-    Represents a single crawl request. A full crawl may consist of:
+    Represents a single crawl job. A full crawl may consist of:
       - One root job (requested via API)
       - Multiple child jobs discovered during crawling (links)
-
     """
 
     JOB_STATUS_CHOICES = [

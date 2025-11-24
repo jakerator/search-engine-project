@@ -3,6 +3,9 @@ from django.db import models
 
 
 class Page(models.Model):
+    """
+    Represents a single crawled page metadata and storage references.
+    """
     job = models.ForeignKey("models.CrawlJob", on_delete=models.SET_NULL, null=True, blank=True, related_name="pages")
     url = models.URLField(max_length=2048)
 

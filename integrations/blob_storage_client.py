@@ -29,16 +29,17 @@ class BlobStorageClient:
         )
 
     def store(self, page_id: int, content: str) -> str:
-        """
-        Store page content in S3.
+        """Persist the HTML body for a page and return the generated key.
 
         Args:
-            page_id: The crawl page ID
-            url: The URL of the page
-            content: The HTML content to store
+            page_id: Database primary key of the `Page` record. Used to
+                partition objects underneath `crawls/{page_id}/` for easier
+                cleanup/retention policies.
+            content: Raw HTML (or serialized text) that should be written to S3.
 
         Returns:
-            str: The S3 storage key
+            str: The storage key (from :meth:`_generate_key`) that callers can
+            cache on the `Page` row for future retrieval.
         """
         storage_key = self._generate_key(page_id)
 

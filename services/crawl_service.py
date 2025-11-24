@@ -68,7 +68,7 @@ class CrawlService:
         )
 
         # Queue the crawl task
-        cls._queue_crawl_task(job.id, url, max_depth=job.max_depth, max_pages=job.max_pages)
+        cls._queue_crawl_task(job.id, url)
 
         return {
             "job_id": str(job.id),
@@ -125,15 +125,13 @@ class CrawlService:
         return not jobs_beyond_sla
 
     @classmethod
-    def _queue_crawl_task(cls, job_id, url, max_depth, max_pages):
+    def _queue_crawl_task(cls, job_id, url):
         """
         Queue a crawl task to Celery.
 
         Args:
             job_id (UUID): Job ID
             url (str): URL to crawl
-            max_depth (int): Maximum recursion depth
-            max_pages (int): Maximum pages to crawl
         """
         # Import here to avoid circular dependency
         try:
