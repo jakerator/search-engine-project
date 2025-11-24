@@ -164,7 +164,13 @@ This modular layout ensures clear separation of concerns between:
 - **External system adapters**
 - **Data storage**
 
-
+---
+## Scaling, Clusters, load balancing config
+- All heavy "Crawling" is running in Celery workers, which can be "autoscaled" horizontally by "Redis Broker queue length" metric
+- Used AWS OpenSearch for search index (autoscaling is maintained by AWS)
+- Used S3 for Blob storage, to prevent large SQL DB size
+- Storing Pages/Jobs metadata SQLS DB (Postgres Cluster DB, which can use replicas/sharding)
+- Added "cleanup" commands (Cron) to delete old "Jobs"
 
 
 ---

@@ -15,12 +15,14 @@ from integrations.search_index_client import SearchIndexClient
 @shared_task(bind=True)
 def run_crawl_job(self, job_id, url, sla_duration_hours: int):
     """
-    Single task that crawls within single session (to prevent IP rotation):
+    Single task that crawls within single session (to prevent IP rotation, RAM/CPU spikes, anti-bot checks etc).:
       - root page
       - all children pages
+    Optimized for predictable RAM/CPU usage, designed for multiple workers scalability.
+
     Uses the Page table for visited tracking.
 
-    If need even more scalability, it can be split into multiple tasks per page, but
+    If need even more scalability, it can be split into multiple tasks (per page), but
     that adds complexity around state management, task chaining, and makes IP rotation possible
     (which isn't described in project requirements).
 
@@ -71,7 +73,7 @@ def run_crawl_job(self, job_id, url, sla_duration_hours: int):
 
 
                 try:
-                    # Fetch the page via reusable browser (async under the hood, sync facade)
+                    # Fetch the page via reusable browser
                     html, plain_text, title, child_links, status_code = browser.fetch_html(url)
 
                     # Save raw html in BLOB storage

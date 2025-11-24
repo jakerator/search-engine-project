@@ -180,6 +180,18 @@ class SearchIndexClient:
 
         return doc_id
 
+    def delete_page(self, doc_id: str) -> None:
+        """Delete a single document from the search index."""
+        try:
+            self.client.delete(
+                index=self.index_name,
+                id=doc_id
+            )
+            logger.info(f"Document '{doc_id}' deleted from index '{self.index_name}'.")
+        except Exception as e:
+            logger.error(f"Failed to delete document '{doc_id}': {e}")
+            # Don't raise - we want page deletion to succeed even if index deletion fails
+
     def search(self, query: str, size: int = 10, from_: int = 0) -> Dict[str, Any]:
         """Search indexed pages."""
         search_body = {
