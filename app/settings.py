@@ -152,7 +152,16 @@ REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': [
         'rest_framework.renderers.JSONRenderer',
         "rest_framework.renderers.BrowsableAPIRenderer",
-    ]
+    ],
+    'DEFAULT_THROTTLE_CLASSES': [
+        'rest_framework.throttling.UserRateThrottle',
+        'rest_framework.throttling.AnonRateThrottle',
+    ],
+    # configure API throttling rates
+    'DEFAULT_THROTTLE_RATES': {
+        'user': '100/minute',  # 100 requests per authenticated user per minute
+        'anon': '10/minute', # 10 requests per IP address per minute for anonymous users
+    }
 }
 
 REDISCLOUD_URL = os.environ.get('REDISCLOUD_URL', "redis://127.0.0.1:6379")
